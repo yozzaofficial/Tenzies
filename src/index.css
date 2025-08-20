@@ -1,0 +1,85 @@
+*{
+  box-sizing: border-box;
+  
+}
+body{
+  font-family: "Karla", sans-serif;
+  margin: 0;
+  padding: 50px;
+  background-color: rgb(1, 1, 31);
+  height: 100svh;
+  width: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  
+}
+div#root{
+  height: 100%;
+  width: 100%;
+  max-height: 500px;
+  max-width: 500px;
+}
+main{
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+
+  .diesContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap:20px;
+    align-items: center;
+    padding: 10px;
+
+    .dice{
+      width: 50px;
+      height: 50px;
+      border: none;
+      box-shadow: 0px 2px 4px rgb(158, 158, 158);
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: white;
+      font-size: 1.5em;
+      font-family: "Karla", sans-serif;
+      font-weight: 700;
+      justify-self: center;
+    }
+    .dice.held{
+      background-color: #59E391;
+    }
+  }
+
+  .reRollButton{
+    font-size: 1.5em;
+    padding: 5px;
+    font-family: "Karla", sans-serif;
+    border: none;
+    width: 150px;
+    color:white;
+    background-color: rgb(52, 52, 255);
+    border-radius: 5px;
+    cursor:pointer;
+  }
+}
+
+header{
+  text-align: center;
+  padding: 20px;
+
+  .title{
+    font-size: 2.5em;
+    margin: 0;
+  }
+  .instructions{
+    font-size: 1.2em;
+  }
+}
